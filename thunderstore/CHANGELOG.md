@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+
+- **Added:** **Y** (configurable `PackStayKey`) tells nearby tames that are Following you to Stay. Does not check pens. Uses the same range and cap as pack call.
+- **Added:** `TameNameMaxLength` (default 100, vanilla is 10) for renaming tames.
+
 ## 1.0.0 — Valheim 1.0
 
 - Requires **Valheim 1.0** (tested on 1.0.7+) and BepInEx Pack 5.4.2350 (Unity 6).

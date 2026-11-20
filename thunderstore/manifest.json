@@ -1,6 +1,6 @@
 {
   "name": "LetsGo",
-  "version_number": "1.0.0",
+  "version_number": "1.1.0",
   "website_url": "https://github.com/cdjensen99-sudo/LetsGo",
   "description": "Follow, Stay, pack call, portal-follow, and cart hitch for any tamed Valheim creature — including young.",
   "dependencies": [

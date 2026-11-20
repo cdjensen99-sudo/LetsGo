@@ -11,6 +11,7 @@ Valheim BepInEx mod: **Follow / Stay** on any tamed creature, pack call, portal-
 | **E** on a tame | Cycle **Follow** / **Stay** |
 | **Shift+E** | Vanilla pet / rename |
 | **T** | Call nearby tames that are **not inside a pen** |
+| **Y** | Nearby tames that are **Following you** Stay (no pen check) |
 | Use a cart | Hitch the nearest eligible adult tame, then the player |
 
 ## Follow
@@ -20,6 +21,8 @@ If it is tamed, it can follow — wolves, boars, lox, Asksvin, hens, cubs, calve
 ## Pack call
 
 **T** calls nearby Stay tames in the open. Tames enclosed by **player-built structures** (fences, walls, barns, gates — not only fences) do not answer. Standing along a wall with open sides still answers. Set `PackCall.IgnorePenned` to false to call everyone in range.
+
+**Y** tells nearby tames that are Following you to Stay. Pens are ignored. Range and cap match pack call (`PackCall.Radius` / `PackCall.MaxTames`).
 
 ## Carts
 
@@ -48,6 +51,8 @@ Pick one portal system: TeleportEverything ally teleport **or** this mod's porta
 | EnableFollow | true | Follow / Stay |
 | EnableCarts | true | Hitch vanilla carts |
 | EnablePackCall | true | T hotkey |
+| EnablePackStay | true | Y hotkey: Following tames Stay |
+| TameNameMaxLength | 100 | Rename character limit (vanilla 10) |
 | EnablePortalFollow | true | Following tames through vanilla portals |
 | FollowDistanceFactor | 3 | Stop = max(MediumFollowDistance, radius × this) |
 | MediumFollowDistance | 3 | Minimum follow stop |

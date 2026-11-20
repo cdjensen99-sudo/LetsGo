@@ -15,6 +15,7 @@ Follow logic was extracted from Beast Hird / Training. Do **not** run both mods 
 | **E** on a tame | Cycle **Follow** / **Stay** |
 | **Shift+E** | Vanilla pet / rename |
 | **T** | Call nearby tames that are **not inside a pen** |
+| **Y** | Nearby tames that are **Following you** Stay (no pen check) |
 | Use a cart | Hitch the nearest eligible adult tame, then the player |
 
 ## Follow
@@ -24,6 +25,8 @@ If it is tamed, it can follow — MonsterAI and AnimalAI, adults and young (cubs
 ## Pack call
 
 **T** calls Stay tames in the open. Tames enclosed by **player-built structures** (fences, walls, barns, gates) do not answer. A tame standing along a wall with open sides still answers.
+
+**Y** tells tames that are Following you to Stay. No pen check. Same range and cap as **T**.
 
 ## Carts
 
@@ -51,6 +54,7 @@ Disable Beast Hird, Tames Follow, AsksvinImproved, BetterTames, FollowDistance, 
 - Hen: E Follow and she walks; Shift+E still pets.
 - Chick, piglet, cub, calf, hatchling: E Follow and they walk.
 - T: Stay tames in the open answer. Stay tames inside a fenced or walled pen do not. Tames along a fence line still answer.
+- Y: tames Following you Stay. Penned followers stay too.
 - Cart: adult boar hitch. Lox/moose/Asksvin hitch farther behind and should not smash the cart. Hen / young do not hitch (player pull still works).
 - Portal: a Following tame comes through.
 

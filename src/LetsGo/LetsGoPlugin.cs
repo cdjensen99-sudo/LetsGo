@@ -48,6 +48,11 @@ public sealed class LetsGoPlugin : BaseUnityPlugin
         {
             PackCall.TryCallFromLocal();
         }
+
+        if (ModConfig.EnablePackStay.Value && ModConfig.PackStayKey.Value.IsDown())
+        {
+            PackStay.TryStayFromLocal();
+        }
     }
 
     private void OnDestroy()

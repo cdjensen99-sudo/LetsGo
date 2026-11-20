@@ -9,7 +9,7 @@
     <BepInExPath Condition="'$(BepInExPath)' == ''">$(GaleProfile)\BepInEx</BepInExPath>
     <BepInExCore>$(BepInExPath)\core</BepInExCore>
 
-    <ModVersion>1.0.0</ModVersion>
+    <ModVersion>1.1.0</ModVersion>
     <ModDeployDir>$(GaleProfile)\BepInEx\plugins\Hardwire99-LetsGo</ModDeployDir>
   </PropertyGroup>
 </Project>

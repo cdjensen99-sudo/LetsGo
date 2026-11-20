@@ -30,6 +30,9 @@ internal static class ModConfig
     internal static ConfigEntry<bool> SkipRecallIfServersideQoL;
     internal static ConfigEntry<bool> SkipPortalFollowIfTeleportEverything;
     internal static ConfigEntry<KeyboardShortcut> PackCallKey;
+    internal static ConfigEntry<bool> EnablePackStay;
+    internal static ConfigEntry<KeyboardShortcut> PackStayKey;
+    internal static ConfigEntry<int> TameNameMaxLength;
 
     internal static void Bind(ConfigFile config)
     {
@@ -38,6 +41,11 @@ internal static class ModConfig
         EnableFollow = config.Bind("General", "EnableFollow", true, "Follow / Stay on tamed creatures, including young.");
         EnableCarts = config.Bind("General", "EnableCarts", true, "Hitch vanilla carts to adult boar-sized or larger tames.");
         EnablePackCall = config.Bind("General", "EnablePackCall", true, "Hotkey to call nearby tames that are not inside a pen.");
+        EnablePackStay = config.Bind(
+            "General",
+            "EnablePackStay",
+            true,
+            "Hotkey to tell nearby tames that are Following you to Stay. Does not check pens.");
         EnablePortalFollow = config.Bind("General", "EnablePortalFollow", true, "Following tames travel vanilla portals with you.");
         ExcludePrefabs = config.Bind(
             "General",
@@ -109,6 +117,16 @@ internal static class ModConfig
             "PackCallKey",
             new KeyboardShortcut(KeyCode.T),
             "Call nearby eligible tames to Follow.");
+        PackStayKey = config.Bind(
+            "Controls",
+            "PackStayKey",
+            new KeyboardShortcut(KeyCode.Y),
+            "Tell nearby tames that are Following you to Stay.");
+        TameNameMaxLength = config.Bind(
+            "General",
+            "TameNameMaxLength",
+            100,
+            "Maximum characters when renaming a tame (10-100). Vanilla is 10.");
 
         PortalFollowRadius = config.Bind(
             "Portal",
